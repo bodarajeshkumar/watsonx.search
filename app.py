@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 class WeaviateSearchAPI:
-    def __init__(self, host='https://weaviate.itzroks-0600020kt4-figglp-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-south.containers.appdomain.cloud'):
+    def __init__(self, host='http://weaviate.apps.6667fbca59a2e3001e2353d0.cloud.techzone.ibm.com'):
         self.client = Client(host)
 
     def search(self, search_string):
